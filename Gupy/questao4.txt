@@ -1,0 +1,25 @@
+LÂMPADA 1
+LÂMPADA 2
+LÂMPADA 3
+
+INTERRUPTOR 1
+INTERRUPTOR 2
+INTERRUPTOR 3
+
+Para descobrirmos qual interruptor controla a lâmpada, devemos verificar a
+temperatura que a lâmpada fica após o interruptor ser ligado, por conta do 
+calor da eletricidade. Seguiremos esta estratégia:
+
+Ligar interruptor 1 e esperar alguns minutos,
+Desligar interruptor 1 e ligar interruptor 2,
+
+Entre na sala das lâmpadas e verifique se a lâmpada está ligada,
+
+SE LÂMPADA == ACESA:
+    Interruptor 2 controla a lâmpada
+
+SE LÂMPADA == APAGADA:
+    SE LÂMPADA == QUENTE:
+        Interruptor 1 controla a lâmpada
+    ELSE:
+        Interruptor 3 controla a lâmpada
